@@ -1,6 +1,6 @@
 [project]
 name = "lolcalc"
-version = "1.1.5"
+version = "1.1.6"
 description = "A simple CLI calculator"
 requires-python = ">=3.8"
 

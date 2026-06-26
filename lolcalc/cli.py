@@ -1,5 +1,7 @@
 import argparse
 from colorama import Fore, Style
+from .welcome import welcome
+from .welcome import lol
 from .safe_math import safe_eval
 from importlib.metadata import version, PackageNotFoundError
 
@@ -29,6 +31,7 @@ def main():
         return
 
     # Interactive mode
+    print(welcome)
     print(Fore.CYAN + f"LolCalc Version: {get_version()}" + Style.RESET_ALL)
     print(Fore.GREEN + "Type 'exit' or 'quit' to leave." + Style.RESET_ALL)
     print(Fore.MAGENTA + "Type 'help' or '--help' for instructions." + Style.RESET_ALL)
@@ -37,6 +40,16 @@ def main():
         expr = input("> ")
         if expr.lower() in ("exit", "quit"):
             break
+        elif expr.lower() in ("clear", "cls"):
+            print("\033c", end="")  # Clear the terminal
+            print(welcome)
+            print(Fore.CYAN + f"LolCalc Version: {get_version()}" + Style.RESET_ALL)
+            print(Fore.GREEN + "Type 'exit' or 'quit' to leave." + Style.RESET_ALL)
+            print(Fore.MAGENTA + "Type 'help' or '--help' for instructions." + Style.RESET_ALL)
+            print(Fore.YELLOW)
+            continue
+        elif expr.lower() in ("lol", "LOL"):
+            print(lol)
         elif expr.lower() in ("version", "--version"):
             print(Fore.YELLOW + f"LolCalc version: {get_version()}" + Style.RESET_ALL)
             print(Fore.YELLOW)
