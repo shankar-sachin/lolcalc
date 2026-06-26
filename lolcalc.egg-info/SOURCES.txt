@@ -1,0 +1,9 @@
+pyproject.toml
+lolcalc/__init__.py
+lolcalc/cli.py
+lolcalc/safe_math.py
+lolcalc.egg-info/PKG-INFO
+lolcalc.egg-info/SOURCES.txt
+lolcalc.egg-info/dependency_links.txt
+lolcalc.egg-info/entry_points.txt
+lolcalc.egg-info/top_level.txt

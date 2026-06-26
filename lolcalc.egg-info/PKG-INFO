@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: lolcalc
+Version: 1.1.5
+Summary: A simple CLI calculator
+Requires-Python: >=3.8

@@ -1,0 +1,8 @@
+[project]
+name = "lolcalc"
+version = "1.1.5"
+description = "A simple CLI calculator"
+requires-python = ">=3.8"
+
+[project.scripts]
+lolcalc = "lolcalc.cli:main"
