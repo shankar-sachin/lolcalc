@@ -1,4 +1,4 @@
-# LolCalc Version 1.1.5 aka `😂 Calc`
+# LolCalc Version 1.1.7 aka `😂 Calc`
 ### A funny take on the standard four-function software calculator 😂😂
 ```
                 ██╗      ██████╗ ██╗      ██████╗ █████╗ ██╗      ██████╗
@@ -7,7 +7,7 @@
                 ██║     ██║   ██║██║     ██║     ██╔══██║██║     ██║   
                 ███████╗╚██████╔╝███████╗╚██████╗██║  ██║███████╗╚██████╗
                 ╚══════╝ ╚═════╝ ╚══════╝ ╚═════╝╚═╝  ╚═╝╚══════╝ ╚═════╝
-                                        LolCalc v1.1.5
+                                        LolCalc v1.1.7
                                       © 2026 LolCalc LLC
                                        Not truly an LLC
 ```
