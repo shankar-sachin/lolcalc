@@ -15,6 +15,7 @@ def main():
     parser = argparse.ArgumentParser(description="LolCalc CLI")
     parser.add_argument("expression", nargs="?", help="Math expression to evaluate")
     parser.add_argument("--version", action="store_true", help="Show version")
+    counter = False
 
     args = parser.parse_args()
 
@@ -37,7 +38,12 @@ def main():
     print(Fore.MAGENTA + "Type 'help' or '--help' for instructions." + Style.RESET_ALL)
     print(Fore.YELLOW)
     while True:
-        expr = input("> ")
+        if counter == True:
+            expr = input(Fore.RED + "> " + Fore.WHITE)
+            counter = False
+        else:
+            expr = input(Fore.YELLOW + "> " + Fore.WHITE)
+            counter = False
         if expr.lower() in ("exit", "quit"):
             break
         elif expr.lower() in ("clear", "cls"):
@@ -61,7 +67,10 @@ def main():
             print(Fore.YELLOW)
             continue
         try:
+            print(Fore.YELLOW, end="")
             print(Fore.GREEN + str(safe_eval(expr)) + Style.RESET_ALL)
             print(Fore.YELLOW, end="")
         except Exception as e:
             print(Fore.RED + f"Error: {e}" + Style.RESET_ALL)
+            print(Fore.RED, end="")
+            counter = True

@@ -13,7 +13,7 @@ welcome = r"""
 lol = r"""
         GREMLIN 1                 GREMLIN 2
           .-.                        .-.
-      LOL (o_o)   <BONK>        LOL (o_o)
+      LOL (o_o)   <MWAH>        LOL (o_o)
           |=|                        |=|
          __|__                      __|__
        //.=|=.\\                  //.=|=.\\
